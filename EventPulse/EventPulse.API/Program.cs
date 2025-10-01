@@ -1,3 +1,4 @@
+using EventPulse.API.Extensions;
 
 namespace EventPulse.API
 {
@@ -8,6 +9,7 @@ namespace EventPulse.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddDatabaseServices(builder.Configuration);
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
