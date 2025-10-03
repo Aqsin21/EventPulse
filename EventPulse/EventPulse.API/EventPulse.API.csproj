@@ -15,4 +15,8 @@
     <ProjectReference Include="..\EventPulse.DAL\EventPulse.DAL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
 </Project>
