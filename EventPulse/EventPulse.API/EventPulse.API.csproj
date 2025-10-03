@@ -15,8 +15,4 @@
     <ProjectReference Include="..\EventPulse.DAL\EventPulse.DAL.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>
