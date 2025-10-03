@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EventPulse.BLL\EventPulse.BLL.csproj" />
     <ProjectReference Include="..\EventPulse.DAL\EventPulse.DAL.csproj" />
   </ItemGroup>
 

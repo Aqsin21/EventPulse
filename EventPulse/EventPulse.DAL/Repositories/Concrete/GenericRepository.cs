@@ -20,7 +20,7 @@ namespace EventPulse.DAL.Repositories.Concrete
 
         public async Task DeleteAsync(int id)
         {
-           var entity = await _dbSet.FindAsync(id);
+            var entity = await _dbSet.FindAsync(id);
             if (entity !=null) 
             {
                 _dbSet.Remove(entity);

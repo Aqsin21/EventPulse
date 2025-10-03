@@ -1,11 +1,12 @@
 ﻿using EventPulse.DAL.Repositories.Abstract;
 using EventPulse.DAL.Repositories.Concrete;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 namespace EventPulse.DAL.Extension
 {
     public static class DalServiceCollection
     {
-        public static IServiceCollection AddDal(this  IServiceCollection services)
+        public static IServiceCollection AddDal(this  IServiceCollection services , IConfiguration configuration)
         {
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<ICategoryRepository, CategoryRepository>();
