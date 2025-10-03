@@ -1,9 +1,6 @@
 ﻿using EventPulse.BLL.Services.Abstract;
 using EventPulse.DAL.DataContext.Entities;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-
 namespace EventPulse.API.Controllers.Admin
 {
     [Route("api/[controller]")]

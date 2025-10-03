@@ -16,6 +16,7 @@ namespace EventPulse.DAL.Extension
             services.AddScoped<IOrganizerRepository, OrganizerRepository>();
             services.AddScoped<IEventTicketTypeRepository, EventTicketTypeRepository>();
             services.AddScoped<ITicketRepository, TicketRepository>();
+            services.AddScoped<ITicketTypeRepository, TicketTypeRepository>();
             return services;
 
         }

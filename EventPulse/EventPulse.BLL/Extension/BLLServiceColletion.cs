@@ -2,7 +2,6 @@
 using EventPulse.BLL.Services.Concrete;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
 namespace EventPulse.BLL.Extension
 {
     public static class BLLServiceCollection
@@ -16,6 +15,7 @@ namespace EventPulse.BLL.Extension
             services.AddScoped<IOrganizerService ,OrganizerService>();
             services.AddScoped<ITicketService  ,TicketService>();
             services.AddScoped<IVenueService ,VenueService>();
+            services.AddScoped<ITicketTypeService ,TicketTypeService>();
             return services;
         }
     }
